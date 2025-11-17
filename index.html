@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UZTOUR - Discover the beauty of Uzbekistan. Explore regions, hotels, restaurants, and tour packages.">
+    <title>UZTOUR - Discover Uzbekistan Tourism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">UZTOUR</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="navigator.html">Navigator</a></li>
+                <li><a href="virtual-tours.html">Virtual Tours</a></li>
+                <li><a href="taxi.html">Taxi</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('assets/img/hero/main.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover the Magic of Uzbekistan</h1>
+            <p>Experience ancient cities, stunning architecture, and warm hospitality</p>
+            <a href="regions.html" class="btn btn-primary">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="section section-light">
+        <div class="container">
+            <form class="search-bar" onsubmit="return false;">
+                <input type="text" placeholder="Search for cities, hotels, or tour packages..." id="searchInput">
+                <button type="button" onclick="performSearch()">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Regions -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="text-center mb-2">Explore Our Regions</h2>
+            <p class="text-center text-gray mb-3">Discover the diverse provinces of Uzbekistan</p>
+            
+            <div class="grid grid-4">
+                <div class="card">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="Samarkand" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Samarkand</h3>
+                        <p class="card-text">Ancient Silk Road city with stunning Islamic architecture</p>
+                        <a href="samarkand.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/bukhara/hero.jpg" alt="Bukhara" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Bukhara</h3>
+                        <p class="card-text">UNESCO heritage city with rich history and culture</p>
+                        <a href="bukhara.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/tashkent-city/hero.jpg" alt="Tashkent City" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Tashkent City</h3>
+                        <p class="card-text">Modern capital with vibrant culture and amenities</p>
+                        <a href="tashkent-city.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/khorezm/hero.jpg" alt="Khorezm" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Khorezm</h3>
+                        <p class="card-text">Home to ancient Khiva and Silk Road wonders</p>
+                        <a href="khorezm.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/fergana/hero.jpg" alt="Fergana" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Fergana</h3>
+                        <p class="card-text">Beautiful valley with traditional crafts and nature</p>
+                        <a href="fergana.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/andijan/hero.jpg" alt="Andijan" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Andijan</h3>
+                        <p class="card-text">Eastern gateway with markets and cultural sites</p>
+                        <a href="andijan.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/navoi/hero.jpg" alt="Navoi" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Navoi</h3>
+                        <p class="card-text">Desert landscapes with ancient ruins and history</p>
+                        <a href="navoi.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/provinces/namangan/hero.jpg" alt="Namangan" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Namangan</h3>
+                        <p class="card-text">Scenic mountains and traditional Uzbek culture</p>
+                        <a href="namangan.html" class="btn btn-outline">View Province</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="regions.html" class="btn btn-primary">View All Regions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Hotels -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center mb-2">Featured Hotels</h2>
+            <p class="text-center text-gray mb-3">Comfortable accommodations across Uzbekistan</p>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/img/hotels/registan-plaza.jpg" alt="Registan Plaza Hotel" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Registan Plaza Hotel</h3>
+                        <p class="card-text">Luxury hotel in the heart of Samarkand</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="rating">★★★★★</span>
+                            <span class="price">$120/night</span>
+                        </div>
+                        <a href="hotels.html" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/hotels/toshkent-plaza.jpg" alt="Tashkent Palace" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Tashkent Palace</h3>
+                        <p class="card-text">Modern comfort in the capital city</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$95/night</span>
+                        </div>
+                        <a href="hotels.html" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/hotels/buxoro-plaza.jpg" alt="Bukhara Heritage Inn" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Bukhara Heritage Inn</h3>
+                        <p class="card-text">Traditional architecture with modern amenities</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="rating">★★★★★</span>
+                            <span class="price">$110/night</span>
+                        </div>
+                        <a href="hotels.html" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="hotels.html" class="btn btn-secondary">Browse All Hotels</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="text-center mb-2">Authentic Cuisine</h2>
+            <p class="text-center text-gray mb-3">Taste the flavors of Uzbekistan</p>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/img/restaurants/samarkand-plov.jpg" alt="Samarkand Plov House" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Samarkand Plov House</h3>
+                        <p class="card-text">Traditional Uzbek cuisine • Samarkand</p>
+                        <span class="rating">★★★★★</span>
+                        <a href="restaurants.html" class="btn btn-outline mt-1" style="width: 100%;">View Menu</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/restaurants/tashkent-sikl-road.jpg" alt="Silk Road Cafe" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Silk Road Cafe</h3>
+                        <p class="card-text">International & Local • Tashkent</p>
+                        <span class="rating">★★★★☆</span>
+                        <a href="restaurants.html" class="btn btn-outline mt-1" style="width: 100%;">View Menu</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/restaurants/buxoro-sikl-road.jpg" alt="Bukhara Tea House" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Bukhara Tea House</h3>
+                        <p class="card-text">Traditional Tea & Sweets • Bukhara</p>
+                        <span class="rating">★★★★★</span>
+                        <a href="restaurants.html" class="btn btn-outline mt-1" style="width: 100%;">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tour Packages -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center mb-2">Popular Tour Packages</h2>
+            <p class="text-center text-gray mb-3">Curated experiences for unforgettable journeys</p>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge badge-success">7 Days</span>
+                        <h3 class="card-title mt-1">Golden Route Tour</h3>
+                        <p class="card-text">Visit Tashkent, Samarkand, Bukhara, and Khiva</p>
+                        <ul style="margin-bottom: 1rem; color: #6C757D;">
+                            <li>• Guided tours of UNESCO sites</li>
+                            <li>• 4-star hotel accommodations</li>
+                            <li>• Traditional meals included</li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="price">$850</span>
+                            <a href="tours.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge badge-success">5 Days</span>
+                        <h3 class="card-title mt-1">Silk Road Adventure</h3>
+                        <p class="card-text">Explore ancient trading routes and monuments</p>
+                        <ul style="margin-bottom: 1rem; color: #6C757D;">
+                            <li>• Historical site visits</li>
+                            <li>• Local guide services</li>
+                            <li>• Transport included</li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="price">$620</span>
+                            <a href="tours.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge badge-success">3 Days</span>
+                        <h3 class="card-title mt-1">Tashkent City Break</h3>
+                        <p class="card-text">Modern capital with cultural highlights</p>
+                        <ul style="margin-bottom: 1rem; color: #6C757D;">
+                            <li>• City tours & museums</li>
+                            <li>• Shopping experiences</li>
+                            <li>• Local cuisine tastings</li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="price">$380</span>
+                            <a href="tours.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="text-center mb-2">Latest Tourism News</h2>
+            <p class="text-center text-gray mb-3">Stay updated with Uzbekistan travel information</p>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-body">
+                        <span style="color: #6C757D; font-size: 0.9rem;">December 10, 2025</span>
+                        <h3 class="card-title">New E-Visa System Launched</h3>
+                        <p class="card-text">Uzbekistan introduces streamlined electronic visa system for tourists from 80+ countries.</p>
+                        <a href="news.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <span style="color: #6C757D; font-size: 0.9rem;">December 5, 2025</span>
+                        <h3 class="card-title">Samarkand Named Cultural Capital</h3>
+                        <p class="card-text">Ancient city receives prestigious designation for 2026 cultural heritage celebrations.</p>
+                        <a href="news.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <span style="color: #6C757D; font-size: 0.9rem;">November 28, 2025</span>
+                        <h3 class="card-title">High-Speed Rail Connection</h3>
+                        <p class="card-text">New bullet train connects Tashkent to Samarkand in just 2 hours with modern comfort.</p>
+                        <a href="news.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>UZTOUR</h4>
+                    <p style="color: #CCC;">Your gateway to discovering the wonders of Uzbekistan. Explore ancient cities, stunning landscapes, and rich cultural heritage.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="regions.html">Regions</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="navigator.html">Tourist Navigator</a></li>
+                        <li><a href="virtual-tours.html">Virtual Tours</a></li>
+                        <li><a href="taxi.html">Taxi Services</a></li>
+                        <li><a href="payment.html">Payment Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@uztour.uz</li>
+                        <li>Phone: +998 71 123 4567</li>
+                        <li><a href="news.html">News & Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 UZTOUR. All rights reserved. | Discover Uzbekistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

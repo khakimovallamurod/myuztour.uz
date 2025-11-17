@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Samarkand - hotels, restaurants, tours, and attractions in this ancient Silk Road city">
+    <title>Samarkand - UZTOUR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">UZTOUR</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="navigator.html">Navigator</a></li>
+                <li><a href="virtual-tours.html">Virtual Tours</a></li>
+                <li><a href="taxi.html">Taxi</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li>Samarkand</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Province Hero -->
+    <div class="province-hero" style="background-image: url('assets/img/provinces/samarkand/hero.jpg');">
+        <div class="province-hero-content">
+            <div class="container">
+                <h1>Samarkand Region</h1>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem;">Ancient Silk Road crossroads and UNESCO World Heritage site</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <section class="section section-white">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('assets/img/provinces/samarkand/hero.jpg')">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="Registan Square">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('assets/img/provinces/samarkand/hero.jpg')">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="Gur-e-Amir Mausoleum">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('assets/img/provinces/samarkand/hero.jpg')">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="Shah-i-Zinda">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('assets/img/provinces/samarkand/hero.jpg')">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="Bibi-Khanym Mosque">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="section section-light" id="hotels">
+        <div class="container">
+            <h2 class="mb-2">Hotels in Samarkand</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Registan Plaza Hotel" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Registan Plaza Hotel</h3>
+                        <p class="card-text">Luxury 5-star hotel with view of Registan Square</p>
+                        <div class="contact-info">
+                            <div class="contact-item">📍 Registan Square, Samarkand</div>
+                            <div class="contact-item">📞 +998 66 233 7777</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                            <span class="rating">★★★★★</span>
+                            <span class="price">$120/night</span>
+                        </div>
+                        <button class="btn btn-primary mt-1" style="width: 100%;" onclick="openBookingModal('Registan Plaza Hotel')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Silk Road Hotel" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Silk Road Hotel</h3>
+                        <p class="card-text">Boutique hotel with traditional Uzbek design</p>
+                        <div class="contact-info">
+                            <div class="contact-item">📍 Tashkent Street, Samarkand</div>
+                            <div class="contact-item">📞 +998 66 235 8888</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$85/night</span>
+                        </div>
+                        <button class="btn btn-primary mt-1" style="width: 100%;" onclick="openBookingModal('Silk Road Hotel')">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Samarkand Oasis" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Samarkand Oasis</h3>
+                        <p class="card-text">Modern comfort with garden and pool</p>
+                        <div class="contact-info">
+                            <div class="contact-item">📍 Bukhara Street, Samarkand</div>
+                            <div class="contact-item">📞 +998 66 237 9999</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$95/night</span>
+                        </div>
+                        <button class="btn btn-primary mt-1" style="width: 100%;" onclick="openBookingModal('Samarkand Oasis')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="section section-white" id="restaurants">
+        <div class="container">
+            <h2 class="mb-2">Restaurants in Samarkand</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/img/restaurants/restaurant1.jpg" alt="Samarkand Plov House" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Samarkand Plov House</h3>
+                        <p class="card-text"><strong>Cuisine:</strong> Traditional Uzbek</p>
+                        <div class="contact-info">
+                            <div class="contact-item">📍 Registan Street</div>
+                            <div class="contact-item">📞 +998 66 234 5555</div>
+                        </div>
+                        <span class="rating mt-1">★★★★★</span>
+                        <a href="tel:+998662345555" class="btn btn-outline mt-1" style="width: 100%;">Call to Reserve</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/restaurants/restaurant1.jpg" alt="Old Samarkand" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Old Samarkand</h3>
+                        <p class="card-text"><strong>Cuisine:</strong> Uzbek & European</p>
+                        <div class="contact-info">
+                            <div class="contact-item">📍 Tashkent Street 45</div>
+                            <div class="contact-item">📞 +998 66 239 6666</div>
+                        </div>
+                        <span class="rating mt-1">★★★★☆</span>
+                        <a href="tel:+998662396666" class="btn btn-outline mt-1" style="width: 100%;">Call to Reserve</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/restaurants/restaurant1.jpg" alt="Registan Tea House" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Registan Tea House</h3>
+                        <p class="card-text"><strong>Cuisine:</strong> Tea & Sweets</p>
+                        <div class="contact-info">
+                            <div class="contact-item">📍 Near Registan Square</div>
+                            <div class="contact-item">📞 +998 66 231 7777</div>
+                        </div>
+                        <span class="rating mt-1">★★★★★</span>
+                        <a href="tel:+998662317777" class="btn btn-outline mt-1" style="width: 100%;">Call to Reserve</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section class="section section-light" id="tours">
+        <div class="container">
+            <h2 class="mb-2">Tour Packages & Guides</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge badge-success">Full Day</span>
+                        <h3 class="card-title mt-1">Samarkand Highlights Tour</h3>
+                        <ul style="margin: 1rem 0; color: #6C757D;">
+                            <li>✓ Registan Square guided tour</li>
+                            <li>✓ Gur-e-Amir Mausoleum</li>
+                            <li>✓ Shah-i-Zinda necropolis</li>
+                            <li>✓ Bibi-Khanym Mosque</li>
+                            <li>✓ Lunch included</li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="price">$45</span>
+                            <a href="mailto:guide@uztour.uz" class="btn btn-primary">Contact Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge badge-success">Half Day</span>
+                        <h3 class="card-title mt-1">Ancient Architecture Tour</h3>
+                        <ul style="margin: 1rem 0; color: #6C757D;">
+                            <li>✓ Registan Square</li>
+                            <li>✓ Ulugbek Observatory</li>
+                            <li>✓ Local bazaar visit</li>
+                            <li>✓ Photography opportunities</li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="price">$30</span>
+                            <a href="mailto:guide@uztour.uz" class="btn btn-primary">Contact Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge badge-success">2 Days</span>
+                        <h3 class="card-title mt-1">Complete Samarkand Experience</h3>
+                        <ul style="margin: 1rem 0; color: #6C757D;">
+                            <li>✓ All major attractions</li>
+                            <li>✓ Traditional craft workshops</li>
+                            <li>✓ Evening cultural show</li>
+                            <li>✓ All meals & transport</li>
+                        </ul>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="price">$180</span>
+                            <a href="mailto:guide@uztour.uz" class="btn btn-primary">Contact Guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Navigator -->
+    <section class="section section-white" id="navigator">
+        <div class="container">
+            <h2 class="mb-2">Tourist Navigator</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <h3>Samarkand Map</h3>
+                    <p style="color: #6C757D; margin-bottom: 1.5rem;">Explore attractions and plan your route</p>
+                    <a href="https://www.google.com/maps/search/Samarkand+tourist+attractions" target="_blank" class="btn btn-primary">Open in Google Maps</a>
+                </div>
+            </div>
+            <div class="grid grid-3 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Registan Square</h4>
+                        <p class="card-text">Iconic plaza with three madrasas</p>
+                        <a href="https://www.google.com/maps/search/Registan+Square+Samarkand" target="_blank" class="btn btn-outline">Get Directions</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Gur-e-Amir</h4>
+                        <p class="card-text">Mausoleum of Timur (Tamerlane)</p>
+                        <a href="https://www.google.com/maps/search/Gur-e-Amir+Samarkand" target="_blank" class="btn btn-outline">Get Directions</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Shah-i-Zinda</h4>
+                        <p class="card-text">Avenue of mausoleums</p>
+                        <a href="https://www.google.com/maps/search/Shah-i-Zinda+Samarkand" target="_blank" class="btn btn-outline">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour -->
+    <section class="section section-light" id="virtual-tour">
+        <div class="container">
+            <h2 class="mb-2">Virtual Tour</h2>
+            <p class="text-gray mb-2">Experience Samarkand's beauty from anywhere</p>
+            <div class="grid grid-2">
+                <div class="card">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="360° Registan" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">360° Registan Square</h3>
+                        <p class="card-text">Immersive panoramic view of the historic plaza</p>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="alert('Virtual tour viewer would open here')">Start Virtual Tour</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/provinces/samarkand/hero.jpg" alt="360° Shah-i-Zinda" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">360° Shah-i-Zinda</h3>
+                        <p class="card-text">Walk through the sacred necropolis</p>
+                        <button class="btn btn-primary" style="width: 100%;" onclick="alert('Virtual tour viewer would open here')">Start Virtual Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taxi Service -->
+    <section class="section section-white" id="taxi">
+        <div class="container">
+            <h2 class="mb-2">Taxi Services</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Yandex Taxi</h3>
+                        <p class="card-text">Convenient app-based taxi service available throughout Samarkand</p>
+                        <a href="https://taxi.yandex.com/" target="_blank" class="btn btn-primary" style="width: 100%;">Open Yandex Taxi</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Local Taxi Numbers</h3>
+                        <div class="contact-info" style="margin-top: 1rem;">
+                            <div class="contact-item"><strong>📞 Samarkand Taxi:</strong> +998 66 230 0000</div>
+                            <div class="contact-item"><strong>📞 Express Taxi:</strong> +998 66 231 1111</div>
+                            <div class="contact-item"><strong>📞 City Taxi:</strong> +998 66 232 2222</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Tips -->
+    <section class="section section-light" id="news">
+        <div class="container">
+            <h2 class="mb-2">News & Travel Tips</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-body">
+                        <span style="color: #6C757D; font-size: 0.9rem;">December 12, 2025</span>
+                        <h3 class="card-title">Best Time to Visit Samarkand</h3>
+                        <p class="card-text">Spring (April-May) and autumn (September-October) offer ideal weather conditions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <span style="color: #6C757D; font-size: 0.9rem;">December 8, 2025</span>
+                        <h3 class="card-title">New Museum Opening</h3>
+                        <p class="card-text">Samarkand State Museum opens new wing dedicated to Silk Road history.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <span style="color: #6C757D; font-size: 0.9rem;">December 1, 2025</span>
+                        <h3 class="card-title">Tourist Tips</h3>
+                        <p class="card-text">Remember to dress modestly when visiting religious sites and bring sun protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>UZTOUR</h4>
+                    <p style="color: #CCC;">Discover Uzbekistan's heritage</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="regions.html">All Regions</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="navigator.html">Navigator</a></li>
+                        <li><a href="virtual-tours.html">Virtual Tours</a></li>
+                        <li><a href="taxi.html">Taxi</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@uztour.uz</li>
+                        <li>Phone: +998 71 123 4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UZTOUR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h2 id="modalHotelName">Hotel Booking</h2>
+            <p style="color: #6C757D; margin-bottom: 1.5rem;">This is a placeholder booking form. No actual reservation will be made.</p>
+            <form onsubmit="return false;">
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name</label>
+                    <input type="text" placeholder="Enter your name" style="width: 100%; padding: 10px; border: 1px solid #DEE2E6; border-radius: 8px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
+                    <input type="email" placeholder="Enter your email" style="width: 100%; padding: 10px; border: 1px solid #DEE2E6; border-radius: 8px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Check-in Date</label>
+                    <input type="date" style="width: 100%; padding: 10px; border: 1px solid #DEE2E6; border-radius: 8px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Check-out Date</label>
+                    <input type="date" style="width: 100%; padding: 10px; border: 1px solid #DEE2E6; border-radius: 8px;">
+                </div>
+                <button type="button" class="btn btn-primary" style="width: 100%;" onclick="alert('Booking submitted! (Placeholder only)')">Submit Booking Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="modal" id="lightboxModal">
+        <button class="modal-close" onclick="closeLightbox()" style="position: fixed; top: 20px; right: 20px; z-index: 10000; font-size: 3rem; color: white;">&times;</button>
+        <img id="lightboxImg" class="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

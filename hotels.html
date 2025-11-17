@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and book hotels across Uzbekistan">
+    <title>Hotels - UZTOUR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">UZTOUR</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="hotels.html" class="text-primary">Hotels</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="navigator.html">Navigator</a></li>
+                <li><a href="virtual-tours.html">Virtual Tours</a></li>
+                <li><a href="taxi.html">Taxi</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul><li><a href="index.html">Home</a></li><li>Hotels</li></ul>
+        </div>
+    </div>
+
+    <section class="section section-light">
+        <div class="container text-center">
+            <h1>Hotels in Uzbekistan</h1>
+            <p style="font-size: 1.125rem; color: #6C757D; max-width: 700px; margin: 0 auto;">Find comfortable accommodations across all regions</p>
+        </div>
+    </section>
+
+    <section class="section section-white">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Region</label>
+                    <select id="regionFilter" onchange="filterHotels()">
+                        <option value="">All Regions</option>
+                        <option value="samarkand">Samarkand</option>
+                        <option value="bukhara">Bukhara</option>
+                        <option value="tashkent">Tashkent City</option>
+                        <option value="khorezm">Khorezm</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Rating</label>
+                    <select id="ratingFilter" onchange="filterHotels()">
+                        <option value="">All Ratings</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="priceFilter" onchange="filterHotels()">
+                        <option value="">Any Price</option>
+                        <option value="low">Under $50</option>
+                        <option value="mid">$50 - $100</option>
+                        <option value="high">Over $100</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Search</label>
+                    <input type="text" id="searchInput" placeholder="Search hotels..." onkeyup="filterHotels()">
+                </div>
+            </div>
+
+            <div class="grid grid-3" id="hotelGrid">
+                <div class="card" data-region="samarkand" data-rating="5" data-price="high">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Registan Plaza" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Registan Plaza Hotel</h3>
+                        <p class="card-text">Samarkand • Luxury 5-star hotel</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span class="rating">★★★★★</span>
+                            <span class="price">$120/night</span>
+                        </div>
+                        <a href="samarkand.html#hotels" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-region="bukhara" data-rating="5" data-price="high">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Bukhara Heritage" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Bukhara Heritage Inn</h3>
+                        <p class="card-text">Bukhara • Traditional luxury</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span class="rating">★★★★★</span>
+                            <span class="price">$110/night</span>
+                        </div>
+                        <a href="bukhara.html#hotels" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-region="tashkent" data-rating="4" data-price="mid">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Tashkent Palace" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Tashkent Palace</h3>
+                        <p class="card-text">Tashkent City • Modern comfort</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$95/night</span>
+                        </div>
+                        <a href="tashkent-city.html#hotels" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-region="samarkand" data-rating="4" data-price="mid">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Silk Road Hotel" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Silk Road Hotel</h3>
+                        <p class="card-text">Samarkand • Boutique hotel</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$85/night</span>
+                        </div>
+                        <a href="samarkand.html#hotels" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-region="khorezm" data-rating="4" data-price="mid">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Khiva Hotel" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Khiva Grand Hotel</h3>
+                        <p class="card-text">Khorezm • Near old city</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$80/night</span>
+                        </div>
+                        <a href="khorezm.html#hotels" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-region="bukhara" data-rating="4" data-price="mid">
+                    <img src="assets/img/hotels/hotel1.jpg" alt="Old Bukhara" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Old Bukhara Inn</h3>
+                        <p class="card-text">Bukhara • Historic charm</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span class="rating">★★★★☆</span>
+                            <span class="price">$75/night</span>
+                        </div>
+                        <a href="bukhara.html#hotels" class="btn btn-primary mt-1" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section"><h4>UZTOUR</h4><p style="color: #CCC;">Discover Uzbekistan</p></div>
+                <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="regions.html">Regions</a></li><li><a href="hotels.html">Hotels</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="tours.html">Tours</a></li></ul></div>
+                <div class="footer-section"><h4>Services</h4><ul><li><a href="navigator.html">Navigator</a></li><li><a href="virtual-tours.html">Virtual Tours</a></li><li><a href="taxi.html">Taxi</a></li><li><a href="payment.html">Payment</a></li></ul></div>
+                <div class="footer-section"><h4>Contact</h4><ul><li>Email: info@uztour.uz</li><li>Phone: +998 71 123 4567</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 UZTOUR. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
